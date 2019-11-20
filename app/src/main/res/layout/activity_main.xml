@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/design_drawer_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/baidumap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            >
+
+        </com.baidu.mapapi.map.MapView>
+    </LinearLayout>
+<android.support.design.widget.NavigationView
+    android:id="@+id/design_navigation_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@drawable/nav_view_background"
+    app:menu="@menu/menu_nav_view"
+    app:headerLayout="@layout/nav_head"
+    >
+</android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

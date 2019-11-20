@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_location"
+        android:enabled="true"
+        android:icon="@drawable/location"
+        android:title="定位"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_distance_sign_in"
+        android:title="设置签到距离"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_distance_sign_out"
+        android:title="设置设置签退距离"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_time_sign_out"
+        android:title="设置签退提醒时长"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_time_auto"
+        android:title="设置自检时间段"
+        app:showAsAction="never" />
+</menu>
